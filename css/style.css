@@ -130,8 +130,7 @@ nav button:last-child:hover {
     top: calc(100% + 15px);
     display: none;
   }
-
-  
+ 
    .links ul::before {
     content: "";
     border-width: 10px;
@@ -142,10 +141,10 @@ nav button:last-child:hover {
     top: -20px;
   }
    .links ul li a {
-    display: block;
+    display: block!important;
     text-decoration: none;
     padding: 15px;
-    color: #333;
+    color: #333!important ;
     transition: 0.3s;
   }
    .links ul li a:hover {
@@ -159,15 +158,13 @@ nav button:last-child:hover {
   }
   
 }
-@media (max-width: 670px) {
- 
-}
+
 /* end nav */
 /* start header */
 header {
   padding: 50px 90px 0;
   background-color: var(--main-color);
-  position: relative;
+  
 }
 
 header .content {
@@ -255,10 +252,9 @@ header img {
     display: block;
   }
 
-  header .info p {
-  }
   
-}
+  
+ }
 #sidePanel {
     height: 100%;
     width: 0; /* Hidden by default */
@@ -289,7 +285,7 @@ header img {
     transform: translateY(-50%);
     transform: rotate(-90deg);
     z-index: 100;
-}
+} 
 
 /* end header */
 /* start reviews */
